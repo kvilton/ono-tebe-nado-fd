@@ -1,11 +1,11 @@
-.header{
-display: grid;
-grid-template-columns: 1fr min-content 1fr;
-align-items: center;
-height: 293px;
-max-height: 100%;
-padding: 0 50px 0 50px;
-font-size: 18px;
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  height: 293px;
+  max-height: 100%;
+  padding: 0 50px 0 50px;
+  font-size: 18px;
 }
 
 .header__links-list {
@@ -15,38 +15,83 @@ font-size: 18px;
 }
 
 .list-head-circle {
-    list-style: circle;
+  list-style: circle;
 }
 .logo-black {
   display: block;
   width: 138px;
-
 }
 .address_block {
-display: flex;
-flex-direction: column;
-font-style: normal;
-width: 225px;
-line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  width: 225px;
+  line-height: 1.4;
 }
 
-.header__address { 
+.header__address {
   justify-self: right;
 }
 
-.cover { 
+.cover {
+  position: relative;
   background-image: url(../images/cover.jpg);
-  height: 757px;
+  min-height: 757px;
   background-size: cover;
-  
-}
-h1 {
+  text-transform: uppercase;
   color: white;
+  padding: 165px 50px 50px;
+  justify-content: space-between;
 }
 
+.overlay {
+  position: absolute;
+  background-color: rgb(0 0 0 / 0.6);
+  inset: 0;
+  z-index: 0;
+}
 
-.overlay { 
-  max-width: 100%;
-  height: 757px;
-  background-color: rgb(0 0 0 / 0.6 ); 
+.cover__title {
+  position: relative;
+  z-index: 1;
+  font-size: 100px;
+  letter-spacing: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_center {
+  text-align: center;
+  padding-bottom: 29px;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.cover__description {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  font-size: 22px;
+  padding: 121px 0 0 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cover__description-text {
+  word-spacing: 18px;
+}
+
+.bet-button {
+  background-color: transparent;
+  color: white;
+  padding: 11px 31px 11px 31px;
+  border: 1px solid #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
 }
