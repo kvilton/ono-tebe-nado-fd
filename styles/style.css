@@ -1,3 +1,5 @@
+/* ШАПКА */
+
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -12,6 +14,10 @@
   display: flex;
   gap: 25px;
   list-style: none;
+}
+
+.header-link_active { 
+  text-decoration: none;
 }
 
 .list-head-circle {
@@ -32,6 +38,9 @@
 .header__address {
   justify-self: right;
 }
+/* КОНЕЦ ШАПКИ */
+
+/* СЕКЦИЯ COVER */
 
 .cover {
   position: relative;
@@ -95,3 +104,171 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+.lots {
+  padding: 180px 24px 0 24px;
+}
+.lots__heading {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 0 27px 40px;
+}
+
+.lots__card-list {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  min-height: 596px;
+}
+
+.card-link {
+  height: 100%;
+  text-decoration: none;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  padding: 48px 40px 48px 40px;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  position: relative;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.card__title {
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 22px;
+  z-index: 1;
+  position: relative;
+}
+
+.card__text {
+  font-size: 20px;
+  line-height: 120%;
+  z-index: 1;
+  position: relative;
+}
+
+.lots__look-more-link {
+  display: block;
+  margin: 30px 0 0 40px;
+  font-size: 20px;
+}
+
+/* КОНЕЦ СЕКЦИи COVER */
+
+/* СЕКЦИЯ ABOUT */
+
+.about {
+  display: grid;
+  grid-template-columns: 334px 1fr;
+  gap: 25px;
+  padding: 145px 24px;
+}
+
+.about__column {
+  display: flex;
+  justify-content: center;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 240px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.about__logo img {
+  width: 140px;
+  height: auto;
+}
+.about_block {
+  margin-top: 113px;
+}
+
+.about__title {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+/* КОНЕЦ СЕКЦИи ABOUT */
+
+/* ПОДВАЛ */
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  height: 180px;
+  max-height: 100%;
+  padding: 30px 50px 0 50px;
+  font-size: 18px;
+}
+
+.footer_adress {
+  justify-self: left;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.footer__menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__social-list {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+  justify-self: right;
+}
+
+.footer__menu-link_active { 
+text-decoration: none;
+}
+
+/* КОНЕЦ ПОДВАЛа */
